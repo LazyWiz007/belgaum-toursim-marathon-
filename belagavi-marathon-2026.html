@@ -1,0 +1,3160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belagavi Marathon 2026 · World Tourism Day Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
+
+  <style>
+    :root {
+      --ground: #07120B;
+      --surface: #0D1F15;
+      --surface-2: #12281C;
+      --surface-glass: rgba(18, 40, 28, 0.88);
+      --ink: #E8F2E4;
+      --ink-soft: #C4D8C2;
+      --muted: #8BA693;
+      --line: #203D2C;
+      --line-soft: #183022;
+      --green-deep: #05140C;
+      --green: #3BA26E;
+      --green-mid: #4CBF84;
+      --green-glow: rgba(76, 191, 132, 0.25);
+      --marigold: #E9B44C;
+      --marigold-soft: rgba(233, 180, 76, 0.15);
+      --laterite: #D47647;
+      --hero-ink: #F4F9F1;
+      --hero-muted: #B8D0BE;
+      --shadow: 0 8px 32px rgba(0, 0, 0, .45);
+      --shadow-lg: 0 16px 48px -12px rgba(0, 0, 0, .7);
+      --maxw: 1220px;
+      --radius: 12px;
+    }
+
+    [data-theme="light"] {
+      --ground: #EDF4EB;
+      --surface: #FFFFFF;
+      --surface-2: #F4F9F1;
+      --surface-glass: rgba(255, 255, 255, 0.92);
+      --ink: #0C2418;
+      --ink-soft: #2A4434;
+      --muted: #566E5F;
+      --line: #CDDDC4;
+      --line-soft: #DEE9D6;
+      --green-deep: #0D3323;
+      --green: #1B6642;
+      --green-mid: #2C885A;
+      --green-glow: rgba(44, 136, 90, 0.18);
+      --marigold: #C98516;
+      --marigold-soft: #FDF4E2;
+      --laterite: #AC5B32;
+      --hero-ink: #F4F9F1;
+      --hero-muted: #B8D0BE;
+      --shadow: 0 6px 24px rgba(14, 38, 26, .08);
+      --shadow-lg: 0 16px 40px -10px rgba(14, 38, 26, .16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      background: var(--ground);
+      color: var(--ink);
+      font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17.5px;
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
+      text-wrap: balance;
+      font-weight: 600;
+      line-height: 1.16
+    }
+
+    a {
+      color: var(--green-mid);
+      text-decoration: none
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 32px
+    }
+
+    .eyebrow {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .82rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--marigold);
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      background: var(--marigold);
+      border-radius: 50%;
+      display: inline-block
+    }
+
+    /* ---------- PRESENTATION CONTROLS BAR ---------- */
+    .deck-bar {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      background: rgba(10, 24, 16, 0.94);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--line);
+      border-radius: 40px;
+      padding: 8px 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .deck-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .deck-btn {
+      background: var(--surface-2);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 15px;
+      transition: all .2s ease;
+    }
+
+    .deck-btn:hover {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green)
+    }
+
+    .deck-counter {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--marigold);
+      min-width: 96px;
+      text-align: center;
+    }
+
+    .deck-title {
+      font-size: .88rem;
+      color: var(--ink-soft);
+      font-weight: 500;
+      border-left: 1px solid var(--line);
+      padding-left: 14px
+    }
+
+    .deck-toggle {
+      background: transparent;
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-size: .8rem;
+      padding: 6px 14px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all .2s ease;
+    }
+
+    .deck-toggle:hover {
+      color: var(--ink);
+      border-color: var(--marigold)
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      position: relative;
+      background: var(--green-deep);
+      color: var(--hero-ink);
+      overflow: hidden;
+      min-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center
+    }
+
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .38;
+      filter: saturate(1.1) contrast(1.15)
+    }
+
+    .hero-veil {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top right, rgba(233, 180, 76, 0.18), transparent 45%),
+        linear-gradient(180deg, rgba(5, 20, 12, .45) 0%, rgba(5, 20, 12, .82) 55%, rgba(5, 20, 12, .98) 100%);
+    }
+
+    .hero-inner {
+      position: relative;
+      padding: 72px 0 54px
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 7vw, 5.4rem);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      margin: 18px 0 0;
+      color: var(--hero-ink);
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--marigold)
+    }
+
+    .hero-lede {
+      margin-top: 22px;
+      max-width: 40em;
+      font-size: clamp(1.15rem, 2vw, 1.35rem);
+      color: var(--hero-muted);
+      line-height: 1.62;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px
+    }
+
+    .h-badge {
+      padding: 9px 18px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .2);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .84rem;
+      letter-spacing: .05em;
+      color: var(--hero-ink);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .h-badge.gold {
+      background: var(--marigold-soft);
+      border-color: var(--marigold);
+      color: var(--marigold)
+    }
+
+    .h-badge.green {
+      background: var(--green-glow);
+      border-color: var(--green-mid);
+      color: var(--green-mid)
+    }
+
+    .facts {
+      position: relative;
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-top: 1px solid rgba(255, 255, 255, .16);
+      background: rgba(0, 0, 0, .28);
+      border-radius: var(--radius);
+    }
+
+    .fact {
+      padding: 22px 20px 24px;
+      border-right: 1px solid rgba(255, 255, 255, .12)
+    }
+
+    .fact:last-child {
+      border-right: 0
+    }
+
+    .fact dt {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .74rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--hero-muted);
+      margin-bottom: 8px
+    }
+
+    .fact dd {
+      margin: 0;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.45rem;
+      color: var(--hero-ink);
+      line-height: 1.2;
+      font-variant-numeric: tabular-nums
+    }
+
+    .fact dd small {
+      display: block;
+      font-family: "Archivo", sans-serif;
+      font-size: .86rem;
+      color: var(--hero-muted);
+      margin-top: 4px;
+      font-variant-numeric: normal
+    }
+
+    /* ---------- SECTIONS (REDUCED PADDING, LARGER READABLE TEXT) ---------- */
+    .sec {
+      padding: 54px 0;
+      position: relative
+    }
+
+    .sec+.sec {
+      border-top: 1px solid var(--line-soft)
+    }
+
+    .sec-alt {
+      background: var(--surface-2)
+    }
+
+    .sec-head {
+      max-width: 52em;
+      margin-bottom: 32px
+    }
+
+    .sec-head h2 {
+      font-size: clamp(2.1rem, 3.8vw, 3rem);
+      margin: 12px 0 0;
+      letter-spacing: -.015em
+    }
+
+    .sec-head p {
+      margin-top: 12px;
+      color: var(--ink-soft);
+      font-size: 1.15rem;
+      max-width: 44em;
+      line-height: 1.58
+    }
+
+    /* ---------- SLIDE 2: PPT PROPOSITION CARDS ---------- */
+    .prop-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .pcard {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 34px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      box-shadow: var(--shadow);
+      transition: transform .25s ease, border-color .25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pcard:hover {
+      transform: translateY(-4px);
+      border-color: var(--green-mid)
+    }
+
+    .pcard-featured {
+      border-color: var(--marigold);
+      background: linear-gradient(145deg, var(--surface) 0%, rgba(233, 180, 76, 0.08) 100%);
+    }
+
+    .pcard-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .pcard-num {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--marigold);
+      line-height: 1;
+    }
+
+    .pcard-tag {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .76rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+    }
+
+    .pcard-featured .pcard-tag {
+      background: var(--marigold-soft);
+      border-color: var(--marigold);
+      color: var(--marigold);
+      font-weight: 600
+    }
+
+    .pcard h3 {
+      font-size: 1.6rem;
+      color: var(--ink)
+    }
+
+    .pcard-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px
+    }
+
+    .pcard-list li {
+      position: relative;
+      padding-left: 24px;
+      font-size: 1.06rem;
+      color: var(--ink-soft);
+      line-height: 1.55;
+    }
+
+    .pcard-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .55em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green-mid);
+    }
+
+    .pcard-featured .pcard-list li::before {
+      background: var(--marigold)
+    }
+
+    .pcard-list li strong {
+      color: var(--ink);
+      font-weight: 600
+    }
+
+    /* ---------- SLIDE 3: UNIFIED INTERACTIVE ROUTE & MAP ---------- */
+    .route-interactive {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 30px;
+      align-items: start;
+      margin-top: 14px;
+    }
+
+    /* Map Outline Canvas Box */
+    .map-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .map-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .map-tabs {
+      display: flex;
+      gap: 6px;
+      background: var(--surface-2);
+      padding: 3px;
+      border-radius: 24px;
+      border: 1px solid var(--line)
+    }
+
+    .map-tab-btn {
+      background: transparent;
+      border: 0;
+      color: var(--ink-soft);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .76rem;
+      font-weight: 600;
+      transition: all .2s ease;
+    }
+
+    .map-tab-btn.active {
+      background: var(--green);
+      color: #fff
+    }
+
+    .map-tab-btn:hover:not(.active) {
+      color: var(--ink)
+    }
+
+    .btn-tour {
+      background: var(--green-glow);
+      color: var(--green-mid);
+      border: 1px solid var(--green-mid);
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .8rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all .2s ease;
+    }
+
+    .btn-tour:hover {
+      background: var(--green-mid);
+      color: #fff
+    }
+
+    .btn-tour.playing {
+      background: var(--marigold);
+      color: #081C13;
+      border-color: var(--marigold)
+    }
+
+    .map-viewport {
+      width: 100%;
+      aspect-ratio: 1.25/1;
+      position: relative;
+      background: rgba(5, 20, 12, .85);
+      border-radius: 8px;
+      border: 1px solid var(--line-soft);
+      overflow: hidden;
+    }
+
+    .svg-map {
+      width: 100%;
+      height: 100%;
+      display: block
+    }
+
+    .gmap-img-wrap {
+      width: 100%;
+      height: 100%;
+      display: none;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .gmap-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .gmap-overlay-badge {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      background: rgba(5, 20, 12, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--marigold);
+      color: var(--marigold);
+      padding: 6px 14px;
+      border-radius: 16px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .75rem;
+      font-weight: 600;
+    }
+
+    /* Interactive Map Nodes */
+    .map-node {
+      cursor: pointer;
+    }
+
+    .map-node circle.outer {
+      transition: all .25s ease;
+      fill: rgba(233, 180, 76, .2);
+      stroke: var(--marigold);
+      stroke-width: 2
+    }
+
+    .map-node:hover circle.outer,
+    .map-node.active circle.outer {
+      fill: rgba(76, 191, 132, .45);
+      stroke: var(--green-mid);
+      stroke-width: 3
+    }
+
+    .map-node circle.inner {
+      fill: var(--marigold);
+      transition: all .25s ease
+    }
+
+    .map-node.active circle.inner {
+      fill: var(--green-mid)
+    }
+
+    .map-node text.lbl {
+      font-family: "Archivo", sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      fill: var(--hero-ink);
+      pointer-events: none;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    }
+
+    /* Landmark Spotlight Viewer */
+    .spotlight-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all .25s ease;
+    }
+
+    .spotlight-media {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/10.5;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .spotlight-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity .25s ease, transform .4s ease;
+    }
+
+    .spotlight-media:hover img {
+      transform: scale(1.03)
+    }
+
+    .spotlight-km-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(5, 20, 12, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--marigold);
+      color: var(--marigold);
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .84rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+    }
+
+    .spotlight-type-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(5, 20, 12, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, .25);
+      color: var(--hero-ink);
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .78rem;
+      font-weight: 500;
+    }
+
+    .spotlight-body {
+      padding: 26px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px
+    }
+
+    .spotlight-body h3 {
+      font-size: 1.75rem;
+      color: var(--ink);
+      line-height: 1.2
+    }
+
+    .spotlight-via {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .82rem;
+      color: var(--marigold);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .spotlight-history {
+      font-size: 1.06rem;
+      color: var(--ink-soft);
+      line-height: 1.6
+    }
+
+    .spotlight-culture {
+      background: var(--surface-2);
+      border-left: 4px solid var(--green-mid);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      font-size: .98rem;
+      color: var(--ink);
+    }
+
+    .spotlight-culture strong {
+      color: var(--green-mid);
+      display: block;
+      font-size: .82rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 4px
+    }
+
+    /* Sub-gallery pill buttons */
+    .sub-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 4px
+    }
+
+    .sub-pill {
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-size: .84rem;
+      padding: 6px 14px;
+      border-radius: 20px;
+      transition: all .2s ease;
+    }
+
+    .sub-pill:hover,
+    .sub-pill.active {
+      background: var(--marigold);
+      color: #081C13;
+      border-color: var(--marigold);
+      font-weight: 700
+    }
+
+    /* Landmark Timeline Selector (Exact fit, no clipping) */
+    .route-selector {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 6px;
+      width: 100%;
+    }
+
+    .sel-btn {
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 4px;
+      text-align: center;
+      transition: all .2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      width: 100%;
+      min-width: 0;
+    }
+
+    .sel-btn:hover,
+    .sel-btn.active {
+      border-color: var(--green-mid);
+      background: var(--surface);
+      transform: translateY(-2px);
+    }
+
+    .sel-btn.active {
+      border-color: var(--marigold);
+      background: var(--marigold-soft)
+    }
+
+    .sel-km {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .74rem;
+      color: var(--marigold);
+      font-weight: 700;
+      white-space: nowrap
+    }
+
+    .sel-name {
+      font-size: .76rem;
+      color: var(--ink-soft);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+      width: 100%
+    }
+
+    /* ---------- SLIDE 4: CULTURAL CORRIDOR (WITH IMAGES & ROUTE LINKS) ---------- */
+    .culture-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      margin-top: 16px
+    }
+
+    .c-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .c-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--marigold)
+    }
+
+    .c-card-media {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4/2.8;
+      overflow: hidden;
+      background: #000
+    }
+
+    .c-card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease
+    }
+
+    .c-card:hover .c-card-media img {
+      transform: scale(1.05)
+    }
+
+    .c-card-km {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(5, 20, 12, 0.88);
+      backdrop-filter: blur(6px);
+      border: 1px solid var(--marigold);
+      color: var(--marigold);
+      padding: 4px 10px;
+      border-radius: 14px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .74rem;
+      font-weight: 700;
+    }
+
+    .c-card-body {
+      padding: 20px 18px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1
+    }
+
+    .c-card-loc {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .74rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .c-card h3 {
+      font-size: 1.28rem;
+      color: var(--ink);
+      line-height: 1.22
+    }
+
+    .c-card p {
+      font-size: .95rem;
+      color: var(--ink-soft);
+      line-height: 1.52
+    }
+
+    .btn-jump-route {
+      margin-top: auto;
+      padding-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .76rem;
+      color: var(--green-mid);
+      font-weight: 700;
+      border-top: 1px solid var(--line-soft);
+      background: transparent;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+      text-align: left;
+      transition: color .2s ease;
+    }
+
+    .btn-jump-route:hover {
+      color: var(--marigold)
+    }
+
+    /* ---------- SLIDE 5: TIMELINE (RACE DAY) ---------- */
+    .tl {
+      border-top: 1px solid var(--line);
+      margin-top: 8px
+    }
+
+    .tl-row {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 24px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line-soft);
+      align-items: baseline
+    }
+
+    .tl-row time {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 1.05rem;
+      color: var(--green-mid);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums
+    }
+
+    .tl-row .what {
+      font-size: 1.12rem
+    }
+
+    .tl-row .what b {
+      font-weight: 600;
+      color: var(--ink)
+    }
+
+    .tl-row .what span {
+      display: block;
+      color: var(--muted);
+      font-size: 1rem;
+      margin-top: 4px
+    }
+
+    .tl-row.key {
+      background: var(--surface);
+      margin: 0 -20px;
+      padding: 16px 20px;
+      border-left: 4px solid var(--marigold);
+      border-radius: 6px
+    }
+
+    /* ---------- SLIDE 6: AUDITORIUM PROCEEDINGS (BIG UNIFIED SESSION) ---------- */
+    .prog-unified {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 36px 34px;
+      box-shadow: var(--shadow-lg);
+      margin-top: 10px;
+    }
+
+    .prog-unified-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--green-mid);
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .prog-unified-head h3 {
+      font-size: 1.65rem;
+      color: var(--ink)
+    }
+
+    .prog-time-badge {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .88rem;
+      color: var(--marigold);
+      background: var(--marigold-soft);
+      border: 1px solid var(--marigold);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .ord-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 40px;
+      row-gap: 0;
+      list-style: none;
+      counter-reset: p;
+    }
+
+    .ord-item {
+      counter-increment: p;
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 14px;
+      padding: 14px 10px;
+      border-bottom: 1px solid var(--line-soft);
+      font-size: 1.06rem;
+      align-items: baseline;
+    }
+
+    .ord-item::before {
+      content: counter(p, decimal-leading-zero);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .88rem;
+      color: var(--marigold);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .ord-item.hi {
+      font-weight: 600;
+      color: var(--ink);
+      background: var(--surface-2);
+      border-radius: 6px;
+      padding: 14px 14px;
+    }
+
+    .ord-item.hi::before {
+      color: var(--green-mid)
+    }
+
+    .ord-item em {
+      display: block;
+      font-style: normal;
+      color: var(--muted);
+      font-size: .92rem;
+      font-weight: 400;
+      margin-top: 4px;
+    }
+
+    /* ---------- SLIDE 7: DIGITAL AI REVAMP ---------- */
+    .digital {
+      background: var(--green-deep);
+      color: var(--hero-ink)
+    }
+
+    .digital .sec-head h2 {
+      color: var(--hero-ink)
+    }
+
+    .digital .sec-head p {
+      color: var(--hero-muted)
+    }
+
+    .dgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 28px
+    }
+
+    .dcell {
+      background: var(--surface-glass);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px 26px;
+      box-shadow: var(--shadow)
+    }
+
+    .dcell h3 {
+      font-size: 1.35rem;
+      color: var(--hero-ink);
+      margin-bottom: 12px
+    }
+
+    .dcell p {
+      font-size: 1.05rem;
+      color: var(--hero-muted);
+      line-height: 1.6
+    }
+
+    .dbanner {
+      margin-top: 30px;
+      padding: 26px 30px;
+      border: 1px solid var(--marigold);
+      background: var(--marigold-soft);
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+      border-radius: var(--radius)
+    }
+
+    .dbanner .db-k {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .84rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--marigold);
+      font-weight: 700;
+      white-space: nowrap
+    }
+
+    .dbanner .db-v {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.35rem;
+      color: var(--hero-ink);
+      flex: 1;
+      min-width: 280px
+    }
+
+    /* ---------- SLIDE 8: COMPETITIONS ---------- */
+    .comps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 8px
+    }
+
+    .comp {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: var(--shadow)
+    }
+
+    .comp h3 {
+      font-size: 1.28rem;
+      color: var(--ink)
+    }
+
+    .comp p {
+      font-size: 1rem;
+      color: var(--ink-soft);
+      line-height: 1.55
+    }
+
+    .comp .st {
+      margin-top: auto;
+      padding-top: 14px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .76rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border-top: 1px solid var(--line-soft)
+    }
+
+    .comp .st.live {
+      color: var(--green-mid);
+      font-weight: 700
+    }
+
+    .comp .st.act {
+      color: var(--marigold);
+      font-weight: 700
+    }
+
+    /* ---------- SLIDE 9: MOBILIZATION STRATEGY (EXPANDED PER USER INSTRUCTION) ---------- */
+    .mob-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 12px
+    }
+
+    .mob-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px 28px;
+      box-shadow: var(--shadow)
+    }
+
+    .mob-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px
+    }
+
+    .mob-sub {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .76rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--marigold);
+      font-weight: 600
+    }
+
+    .mob-badge {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .74rem;
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+      padding: 3px 10px;
+      border-radius: 14px;
+      color: var(--ink-soft)
+    }
+
+    .mob-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 14px;
+      color: var(--ink)
+    }
+
+    .mob-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .mob-card li {
+      position: relative;
+      padding-left: 24px;
+      font-size: 1.02rem;
+      color: var(--ink-soft);
+      line-height: 1.55
+    }
+
+    .mob-card li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: .58em;
+      width: 8px;
+      height: 8px;
+      background: var(--green-mid);
+      border-radius: 50%
+    }
+
+    .mob-card li strong {
+      color: var(--ink);
+      font-weight: 600
+    }
+
+    /* ---------- SLIDE 10: 17-DAY COUNTDOWN ---------- */
+    .cdhead {
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 24px
+    }
+
+    .cdnum {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(4rem, 9vw, 6.4rem);
+      line-height: .9;
+      color: var(--marigold);
+      font-variant-numeric: tabular-nums;
+      font-weight: 700
+    }
+
+    .cdnote {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      max-width: 30em
+    }
+
+    .cd {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow)
+    }
+
+    .cdc {
+      background: var(--surface);
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    .cdc .d {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .82rem;
+      color: var(--green-mid);
+      font-weight: 700
+    }
+
+    .cdc .m {
+      font-size: .96rem;
+      color: var(--ink-soft);
+      line-height: 1.5
+    }
+
+    .cdc.evt {
+      background: var(--green-deep)
+    }
+
+    .cdc.evt .d {
+      color: var(--marigold)
+    }
+
+    .cdc.evt .m {
+      color: var(--hero-ink);
+      font-weight: 700
+    }
+
+    /* ---------- SLIDE 11: OPERATIONS & REFRESHMENTS ---------- */
+    .ops-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 10px
+    }
+
+    .ops-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px 28px;
+      box-shadow: var(--shadow)
+    }
+
+    .ops-sub {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: .76rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--marigold);
+      font-weight: 600;
+      margin-bottom: 10px
+    }
+
+    .ops-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 14px;
+      color: var(--ink)
+    }
+
+    .ops-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .ops-card li {
+      position: relative;
+      padding-left: 24px;
+      font-size: 1.02rem;
+      color: var(--ink-soft);
+      line-height: 1.55
+    }
+
+    .ops-card li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: .58em;
+      width: 8px;
+      height: 8px;
+      background: var(--green-mid);
+      border-radius: 50%
+    }
+
+    .ops-card li strong {
+      color: var(--ink);
+      font-weight: 600
+    }
+
+    /* ---------- RESPONSIVE BREAKPOINTS ---------- */
+    @media (max-width:1040px) {
+      .route-interactive {
+        grid-template-columns: 1fr;
+        gap: 28px
+      }
+
+      .culture-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .prop-grid,
+      .mob-grid,
+      .ops-grid,
+      .ord-grid {
+        grid-template-columns: 1fr
+      }
+
+      .facts {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .fact:nth-child(3) {
+        border-right: 0
+      }
+
+      .comps,
+      .dgrid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .cd {
+        grid-template-columns: repeat(4, 1fr)
+      }
+    }
+
+    @media (max-width:680px) {
+      .wrap {
+        padding: 0 20px
+      }
+
+      .sec {
+        padding: 44px 0
+      }
+
+      .hero-inner {
+        padding-top: 48px
+      }
+
+      .facts {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .fact {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .12)
+      }
+
+      .culture-grid,
+      .comps,
+      .dgrid {
+        grid-template-columns: 1fr
+      }
+
+      .cd {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .tl-row {
+        grid-template-columns: 100px 1fr;
+        gap: 14px
+      }
+
+      .deck-title {
+        display: none
+      }
+    }
+
+    /* ---------- PRINT STYLES FOR PDF PPT (16:9 PRESENTATION SLIDES) ---------- */
+    @page {
+      size: 16in 9in;
+      margin: 0;
+    }
+
+    @media print {
+
+      *,
+      *::before,
+      *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        box-sizing: border-box !important;
+      }
+
+      html,
+      body {
+        width: 16in !important;
+        min-width: 16in !important;
+        max-width: 16in !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: var(--ground) !important;
+        color: var(--ink) !important;
+        font-size: 14px !important;
+        overflow: visible !important;
+      }
+
+      .deck-bar {
+        display: none !important;
+      }
+
+      .btn-tour,
+      .map-tabs,
+      .btn-jump-route,
+      .sub-pills {
+        display: none !important;
+      }
+
+      header.hero,
+      section.sec {
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 16in !important;
+        height: 9in !important;
+        min-height: 9in !important;
+        max-height: 9in !important;
+        padding: 36px 60px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+        position: relative !important;
+        border: none !important;
+      }
+
+      .wrap {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+      }
+
+      .sec-head {
+        margin-bottom: 14px !important;
+        max-width: 100% !important;
+      }
+
+      .sec-head h2 {
+        font-size: 2.1rem !important;
+        margin: 4px 0 0 !important;
+        line-height: 1.15 !important;
+      }
+
+      .sec-head p {
+        font-size: 1.02rem !important;
+        margin-top: 4px !important;
+        line-height: 1.45 !important;
+      }
+
+      /* Slide 1: Hero */
+      .hero-inner {
+        padding: 0 !important;
+      }
+
+      .hero h1 {
+        font-size: 3.8rem !important;
+        margin: 12px 0 0 !important;
+      }
+
+      .hero-lede {
+        margin-top: 14px !important;
+        font-size: 1.18rem !important;
+      }
+
+      .hero-badges {
+        margin-top: 18px !important;
+        gap: 10px !important;
+      }
+
+      .h-badge {
+        padding: 7px 14px !important;
+        font-size: 0.8rem !important;
+      }
+
+      .facts {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+        margin-top: 26px !important;
+      }
+
+      .fact {
+        padding: 14px 14px !important;
+        border-right: 1px solid rgba(255, 255, 255, .12) !important;
+        border-bottom: 0 !important;
+      }
+
+      .fact:last-child {
+        border-right: 0 !important;
+      }
+
+      .fact dd {
+        font-size: 1.3rem !important;
+      }
+
+      /* Slide 2: Proposition Cards (2x2 Grid) */
+      .prop-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+        margin-top: 8px !important;
+      }
+
+      .pcard {
+        padding: 22px 20px !important;
+        gap: 10px !important;
+      }
+
+      .pcard h3 {
+        font-size: 1.35rem !important;
+      }
+
+      .pcard-list {
+        gap: 8px !important;
+      }
+
+      .pcard-list li {
+        font-size: 0.94rem !important;
+        line-height: 1.45 !important;
+        padding-left: 20px !important;
+      }
+
+      /* Slide 3: Interactive Route Map (2 Columns) */
+      .route-interactive {
+        display: grid !important;
+        grid-template-columns: 1.05fr 0.95fr !important;
+        gap: 20px !important;
+        margin-top: 6px !important;
+      }
+
+      .map-box {
+        padding: 14px !important;
+        gap: 10px !important;
+      }
+
+      .map-viewport {
+        aspect-ratio: 1.35/1 !important;
+      }
+
+      .spotlight-card {
+        box-shadow: none !important;
+      }
+
+      .spotlight-media {
+        aspect-ratio: 16/9.5 !important;
+      }
+
+      .spotlight-body {
+        padding: 14px 18px !important;
+        gap: 8px !important;
+      }
+
+      .spotlight-body h3 {
+        font-size: 1.35rem !important;
+      }
+
+      .spotlight-history {
+        font-size: 0.92rem !important;
+        line-height: 1.45 !important;
+      }
+
+      .spotlight-culture {
+        padding: 10px 14px !important;
+        font-size: 0.88rem !important;
+      }
+
+      .route-selector {
+        display: grid !important;
+        grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+        margin-top: 8px !important;
+        gap: 4px !important;
+      }
+
+      .sel-btn {
+        padding: 6px 2px !important;
+      }
+
+      .sel-km {
+        font-size: 0.68rem !important;
+      }
+
+      .sel-name {
+        font-size: 0.7rem !important;
+      }
+
+      /* Slide 4: Cultural Corridor (4 Columns) */
+      .culture-grid {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 14px !important;
+        margin-top: 10px !important;
+      }
+
+      .c-card-media {
+        aspect-ratio: 16/10 !important;
+      }
+
+      .c-card-body {
+        padding: 12px 14px !important;
+        gap: 6px !important;
+      }
+
+      .c-card h3 {
+        font-size: 1.1rem !important;
+      }
+
+      .c-card p {
+        font-size: 0.86rem !important;
+        line-height: 1.42 !important;
+      }
+
+      /* Slide 5: Morning Schedule */
+      .tl {
+        margin-top: 4px !important;
+      }
+
+      .tl-row {
+        padding: 10px 0 !important;
+      }
+
+      .tl-row time {
+        font-size: 0.98rem !important;
+      }
+
+      .tl-row .what {
+        font-size: 1rem !important;
+      }
+
+      .tl-row.key {
+        padding: 10px 16px !important;
+      }
+
+      /* Slide 6: Auditorium Proceedings (2 Columns) */
+      .prog-unified {
+        padding: 18px 22px !important;
+        margin-top: 4px !important;
+      }
+
+      .prog-unified-head {
+        margin-bottom: 12px !important;
+        padding-bottom: 8px !important;
+      }
+
+      .prog-unified-head h3 {
+        font-size: 1.35rem !important;
+      }
+
+      .ord-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        column-gap: 28px !important;
+        row-gap: 0 !important;
+      }
+
+      .ord-item {
+        padding: 7px 6px !important;
+        font-size: 0.92rem !important;
+        gap: 10px !important;
+      }
+
+      .ord-item.hi {
+        padding: 7px 10px !important;
+      }
+
+      .ord-item em {
+        font-size: 0.82rem !important;
+        margin-top: 2px !important;
+      }
+
+      /* Slide 7: AI Revamp (3 Columns) */
+      .dgrid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 14px !important;
+        margin-top: 14px !important;
+      }
+
+      .dcell {
+        padding: 18px 18px !important;
+      }
+
+      .dcell h3 {
+        font-size: 1.18rem !important;
+        margin-bottom: 6px !important;
+      }
+
+      .dcell p {
+        font-size: 0.92rem !important;
+        line-height: 1.45 !important;
+      }
+
+      .dbanner {
+        margin-top: 14px !important;
+        padding: 14px 20px !important;
+      }
+
+      .dbanner .db-v {
+        font-size: 1.12rem !important;
+      }
+
+      /* Slide 8: Competitions (4 Columns) */
+      .comps {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 14px !important;
+        margin-top: 6px !important;
+      }
+
+      .comp {
+        padding: 18px 16px !important;
+        gap: 8px !important;
+      }
+
+      .comp h3 {
+        font-size: 1.15rem !important;
+      }
+
+      .comp p {
+        font-size: 0.88rem !important;
+        line-height: 1.45 !important;
+      }
+
+      /* Slide 9: Mobilization (2 Columns) */
+      .mob-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+        margin-top: 6px !important;
+      }
+
+      .mob-card {
+        padding: 20px 20px !important;
+      }
+
+      .mob-card h3 {
+        font-size: 1.18rem !important;
+        margin-bottom: 8px !important;
+      }
+
+      .mob-card ul {
+        gap: 8px !important;
+      }
+
+      .mob-card li {
+        font-size: 0.9rem !important;
+        line-height: 1.45 !important;
+        padding-left: 20px !important;
+      }
+
+      /* Slide 10: Countdown (7 Columns) */
+      .cdhead {
+        margin-bottom: 12px !important;
+      }
+
+      .cdnum {
+        font-size: 4.2rem !important;
+      }
+
+      .cdnote {
+        font-size: 1rem !important;
+      }
+
+      .cd {
+        display: grid !important;
+        grid-template-columns: repeat(7, 1fr) !important;
+      }
+
+      .cdc {
+        padding: 10px 8px !important;
+        gap: 4px !important;
+      }
+
+      .cdc .d {
+        font-size: 0.74rem !important;
+      }
+
+      .cdc .m {
+        font-size: 0.82rem !important;
+        line-height: 1.35 !important;
+      }
+
+      /* Slide 11: Operations (2 Columns) */
+      .ops-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+        margin-top: 6px !important;
+      }
+
+      .ops-card {
+        padding: 20px 20px !important;
+      }
+
+      .ops-card h3 {
+        font-size: 1.18rem !important;
+        margin-bottom: 8px !important;
+      }
+
+      .ops-card ul {
+        gap: 8px !important;
+      }
+
+      .ops-card li {
+        font-size: 0.9rem !important;
+        line-height: 1.45 !important;
+        padding-left: 20px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== PRESENTATION CONTROLS BAR ===== -->
+  <div class="deck-bar" id="deckBar">
+    <div class="deck-nav">
+      <button class="deck-btn" id="btnPrev" title="Previous Slide (← / PageUp)">&#8592;</button>
+      <div class="deck-counter" id="deckCounter">SLIDE 1 / 11</div>
+      <button class="deck-btn" id="btnNext" title="Next Slide (→ / Space / PageDown)">&#8594;</button>
+    </div>
+    <div class="deck-title" id="deckTitle">World Tourism Day Marathon 2026</div>
+    <button class="deck-toggle" id="themeToggle" title="Toggle Light/Dark Theme">🌓 Theme</button>
+    <button class="deck-toggle" id="btnPdfExport" title="Export as PDF Presentation (Cmd/Ctrl + P)"
+      onclick="window.print()">📥 Export PDF</button>
+  </div>
+
+  <!-- ==========================================
+     SLIDE 1: HERO
+     ========================================== -->
+  <header class="hero" id="slide-1">
+    <img class="hero-img" src="assets/hero_bg.jpg" alt="Belagavi Fort heritage architecture background">
+    <div class="hero-veil"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">World Tourism Day &middot; Sunday, 27 September 2026</p>
+      <h1>Belagavi runs through<br><em>its own history</em></h1>
+      <p class="hero-lede">An 8-kilometre heritage marathon carrying 500 runners past 13th-century forts, sacred
+        basadis, and anti-colonial landmarks &mdash; culminating in the formal inauguration of the district's AI-rebuilt
+        Tourism Portal.</p>
+
+      <div class="hero-badges">
+        <div class="h-badge gold">🏛️ 8 km Single-Category Heritage Route</div>
+        <div class="h-badge green">🤖 AI-Enhanced Tourism Website Inauguration</div>
+        <div class="h-badge">🎭 Live Folk Corridors at Every Landmark</div>
+        <div class="h-badge">🏅 Medals & Refreshments for All 500 Finishers</div>
+      </div>
+
+      <dl class="facts">
+        <div class="fact">
+          <dt>Date</dt>
+          <dd>27 Sep<small>World Tourism Day</small></dd>
+        </div>
+        <div class="fact">
+          <dt>Distance</dt>
+          <dd>8.0 km<small>Single Category</small></dd>
+        </div>
+        <div class="fact">
+          <dt>Start Line</dt>
+          <dd>06:30 hrs<small>Lele Ground</small></dd>
+        </div>
+        <div class="fact">
+          <dt>Finish & Function</dt>
+          <dd>11:00 hrs<small>Kumar Gandharv Aud.</small></dd>
+        </div>
+        <div class="fact">
+          <dt>Key Milestone</dt>
+          <dd>Website Launch<small>AI Tourism Revamp</small></dd>
+        </div>
+      </dl>
+    </div>
+  </header>
+
+  <!-- ==========================================
+     SLIDE 2: THE PROPOSITION (PPT CARDS)
+     ========================================== -->
+  <section class="sec" id="slide-2">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">The Proposition &middot; Executive Summary</p>
+        <h2>The route is the campaign</h2>
+        <p>Turning Belagavi's living heritage into an active guided tour at pace, paired with a permanent digital
+          transformation for district tourism.</p>
+      </div>
+
+      <div class="prop-grid">
+        <!-- Card 1: Heritage At Pace -->
+        <div class="pcard">
+          <div class="pcard-head">
+            <span class="pcard-num">01</span>
+            <span class="pcard-tag">8 km Course</span>
+          </div>
+          <h3>Heritage at Marathon Pace</h3>
+          <ul class="pcard-list">
+            <li><strong>6 Historic Landmarks in 8 km:</strong> Course deliberately connects Belagavi Fort, ancient
+              Basadis, Safa Masjid, Postman Circle, and Chennamma memorial.</li>
+            <li><strong>One Morning, City-Wide Focus:</strong> Closed roads direct all civic attention, 500 runners, and
+              regional cameras at Belagavi's signature monuments.</li>
+            <li><strong>Guided Tour at Pace:</strong> Replaces anonymous highway stretches with a continuous corridor of
+              historic discovery.</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Live Cultural Corridor -->
+        <div class="pcard">
+          <div class="pcard-head">
+            <span class="pcard-num">02</span>
+            <span class="pcard-tag">Live Performances</span>
+          </div>
+          <h3>Culture Staged at the Monuments</h3>
+          <ul class="pcard-list">
+            <li><strong>Authentic Folk Corridors:</strong> Yakshagana, Dollu Kunitha, Karadi Majalu & Veeragase troupes
+              staged directly at landmark sites.</li>
+            <li><strong>Beyond Plain Water Stops:</strong> Cultural points double as high-energy cheering zones and
+              high-visibility media photo spots.</li>
+            <li><strong>Dhol-Tasha Reception:</strong> High-octane finish arch reception welcoming every finisher at
+              Kumar Gandharv Auditorium.</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Website Revamp (Mandatory) -->
+        <div class="pcard pcard-featured">
+          <div class="pcard-head">
+            <span class="pcard-num">03</span>
+            <span class="pcard-tag">Theme Alignment &middot; Mandatory</span>
+          </div>
+          <h3>AI Tourism Website Revamp</h3>
+          <ul class="pcard-list">
+            <li><strong>Complete Tourism Portal Rebuild:</strong> Redesigning Belagavi's official tourism platform with
+              cutting-edge AI features and interactive maps.</li>
+            <li><strong>Official Inauguration at Function:</strong> Formal digital portal launch on stage by the Deputy
+              Commissioner & District In-charge Minister.</li>
+            <li><strong>AI Smart Tourist Guide:</strong> Interactive itineraries, digital guides, and multi-lingual
+              voice assistants for lasting tourism impact.</li>
+          </ul>
+        </div>
+
+        <!-- Card 4: 17-Day Mobilization -->
+        <div class="pcard">
+          <div class="pcard-head">
+            <span class="pcard-num">04</span>
+            <span class="pcard-tag">Public Mobilization</span>
+          </div>
+          <h3>17-Day Sprint to 500 Runners</h3>
+          <ul class="pcard-list">
+            <li><strong>Run Club Network:</strong> Direct engagement across Belagavi, Bengaluru, Hubballi, Dharwad, and
+              Maharashtra borders.</li>
+            <li><strong>Creator & Media Engine:</strong> Kannada & Marathi lifestyle creators capturing on-route reels
+              to build viral regional momentum.</li>
+            <li><strong>Medals & Recognition:</strong> Official medals, bananas & juice for all finishers, plus Tourist
+              Mitra felicitations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SLIDE 3: UNIFIED INTERACTIVE ROUTE & MAP
+     ========================================== -->
+  <section class="sec sec-alt" id="slide-3">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">The 8 km Route &middot; Interactive Map &amp; Cultural Positions</p>
+        <h2>Lele Ground to Kumar Gandharv Auditorium</h2>
+        <p>Hover or click any landmark pin on the vector map outline to inspect on-route tourist monuments, historical
+          significance, and live performance details &mdash; or switch to the official Google Map route.</p>
+      </div>
+
+      <div class="route-interactive">
+
+        <!-- Interactive Code Vector Map Box -->
+        <div class="map-box">
+          <div class="map-top-bar">
+            <div class="map-tabs">
+              <button class="map-tab-btn active" id="tabVector">🗺️ Interactive Vector Map</button>
+              <button class="map-tab-btn" id="tabGoogle">📍 Official Google Map</button>
+            </div>
+            <button class="btn-tour" id="btnPlayTour" title="Auto-step through the 8 km course">▶ Play Route
+              Tour</button>
+          </div>
+
+          <div class="map-viewport">
+            <!-- Vector Map View -->
+            <svg class="svg-map" id="svgMapView" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="mapGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                </pattern>
+                <linearGradient id="routeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#E9B44C" />
+                  <stop offset="35%" stop-color="#3BA26E" />
+                  <stop offset="75%" stop-color="#4CBF84" />
+                  <stop offset="100%" stop-color="#D47647" />
+                </linearGradient>
+              </defs>
+
+              <rect width="100%" height="100%" fill="url(#mapGrid)" />
+
+              <!-- Belagavi Fort Area representation -->
+              <path d="M 450 130 Q 560 120 585 170 Q 600 230 550 260 Q 470 270 440 220 Z" fill="rgba(76,191,132,0.08)"
+                stroke="rgba(76,191,132,0.25)" stroke-dasharray="4,4" stroke-width="1.5" />
+              <text x="470" y="150" font-family="IBM Plex Mono" font-size="11" font-weight="bold"
+                fill="rgba(76,191,132,0.7)" letter-spacing="1">BELAGAVI FORT AREA</text>
+
+              <!-- Major Road Guidelines -->
+              <path d="M 70 450 L 610 450" stroke="rgba(255,255,255,0.07)" stroke-width="2" fill="none" />
+              <path d="M 130 490 L 130 90" stroke="rgba(255,255,255,0.07)" stroke-width="2" fill="none" />
+              <path d="M 360 480 L 360 60" stroke="rgba(255,255,255,0.07)" stroke-width="2" fill="none" />
+              <path d="M 70 110 L 600 110" stroke="rgba(255,255,255,0.07)" stroke-width="2" fill="none" />
+
+              <!-- Main Route Glow & Path -->
+              <path id="routeBgGlow"
+                d="M 120 440 Q 140 400 170 370 T 240 320 T 360 250 Q 440 220 510 170 T 420 110 L 370 100 Q 290 80 230 60"
+                fill="none" stroke="url(#routeGrad)" stroke-width="12" opacity="0.2" />
+              <path id="routePath"
+                d="M 120 440 Q 140 400 170 370 T 240 320 T 360 250 Q 440 220 510 170 T 420 110 L 370 100 Q 290 80 230 60"
+                fill="none" stroke="url(#routeGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+              <path id="routeAnim"
+                d="M 120 440 Q 140 400 170 370 T 240 320 T 360 250 Q 440 220 510 170 T 420 110 L 370 100 Q 290 80 230 60"
+                fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="6,12" opacity="0.8" />
+
+              <!-- START & FINISH BANNERS -->
+              <g transform="translate(50, 430)">
+                <rect width="58" height="24" rx="4" fill="#E9B44C" />
+                <text x="29" y="16" font-family="IBM Plex Mono" font-weight="bold" font-size="11" fill="#081C13"
+                  text-anchor="middle">START</text>
+              </g>
+              <g transform="translate(150, 45)">
+                <rect width="66" height="24" rx="4" fill="#D47647" />
+                <text x="33" y="16" font-family="IBM Plex Mono" font-weight="bold" font-size="11" fill="#FFFFFF"
+                  text-anchor="middle">FINISH</text>
+              </g>
+
+              <!-- CULTURAL ACTIVITY MARKERS ON ROUTE -->
+              <!-- CP 1: Zumba at Lele Ground -->
+              <g transform="translate(90, 400)">
+                <rect width="84" height="20" rx="10" fill="rgba(233,180,76,0.9)" />
+                <text x="42" y="14" font-family="IBM Plex Mono" font-size="9.5" font-weight="bold" fill="#081C13"
+                  text-anchor="middle">🏃‍♂️ Zumba (0k)</text>
+              </g>
+
+              <!-- CP 2: Karadi Majalu at Postman Statue -->
+              <g transform="translate(300, 215)">
+                <rect width="118" height="20" rx="10" fill="rgba(76,191,132,0.95)" />
+                <text x="59" y="14" font-family="IBM Plex Mono" font-size="9.5" font-weight="bold" fill="#081C13"
+                  text-anchor="middle">🥁 Karadi Majalu (3k)</text>
+              </g>
+
+              <!-- CP 3: Yakshagana at Belagavi Fort -->
+              <g transform="translate(470, 100)">
+                <rect width="118" height="20" rx="10" fill="rgba(233,180,76,0.95)" />
+                <text x="59" y="14" font-family="IBM Plex Mono" font-size="9.5" font-weight="bold" fill="#081C13"
+                  text-anchor="middle">🎭 Yakshagana (5k)</text>
+              </g>
+
+              <!-- CP 4: Dhol Tasha at Finish -->
+              <g transform="translate(180, 20)">
+                <rect width="110" height="20" rx="10" fill="rgba(212,118,71,0.95)" />
+                <text x="55" y="14" font-family="IBM Plex Mono" font-size="9.5" font-weight="bold" fill="#FFFFFF"
+                  text-anchor="middle">🎺 Dhol-Tasha (8k)</text>
+              </g>
+
+              <!-- INTERACTIVE MAP NODES (0 to 6) -->
+              <g class="map-node active" data-stop="0" transform="translate(120, 440)">
+                <circle class="outer" r="16" />
+                <circle class="inner" r="7" />
+                <text class="lbl" x="20" y="5">Lele Ground (0.0k)</text>
+              </g>
+
+              <g class="map-node" data-stop="1" transform="translate(170, 370)">
+                <circle class="outer" r="16" />
+                <circle class="inner" r="7" />
+                <text class="lbl" x="20" y="-6">Congress Well (0.6k)</text>
+              </g>
+
+              <g class="map-node" data-stop="2" transform="translate(240, 320)">
+                <circle class="outer" r="16" />
+                <circle class="inner" r="7" />
+                <text class="lbl" x="20" y="5">Military Mahadev (0.8k)</text>
+              </g>
+
+              <g class="map-node" data-stop="3" transform="translate(360, 250)">
+                <circle class="outer" r="16" />
+                <circle class="inner" r="7" />
+                <text class="lbl" x="-165" y="5">Postman Statue Circle (3.0k)</text>
+              </g>
+
+              <g class="map-node" data-stop="4" transform="translate(510, 170)">
+                <circle class="outer" r="18" />
+                <circle class="inner" r="8" />
+                <text class="lbl" x="-140" y="-12">Belagavi Fort (5.0k)</text>
+              </g>
+
+              <g class="map-node" data-stop="5" transform="translate(370, 100)">
+                <circle class="outer" r="16" />
+                <circle class="inner" r="7" />
+                <text class="lbl" x="20" y="-6">Chennamma Circle (7.0k)</text>
+              </g>
+
+              <g class="map-node" data-stop="6" transform="translate(230, 60)">
+                <circle class="outer" r="18" />
+                <circle class="inner" r="8" />
+                <text class="lbl" x="-190" y="22">Kumar Gandharv Aud. (8.0k)</text>
+              </g>
+            </svg>
+
+            <!-- Official Google Maps Image View -->
+            <div class="gmap-img-wrap" id="gmapImgView">
+              <img src="assets/map.png" alt="Official Google Maps 8.8 km Route Survey of Belagavi Marathon">
+              <span class="gmap-overlay-badge">Official Google Maps 8.8 km Route Survey · Traffic Police Recce
+                Alignment</span>
+            </div>
+          </div>
+
+          <!-- Quick Landmark Selector (Fit 7 items cleanly) -->
+          <div class="route-selector" id="routeSelector">
+            <button class="sel-btn active" data-stop="0"><span class="sel-km">0.0k</span><span class="sel-name">Lele
+                Ground</span></button>
+            <button class="sel-btn" data-stop="1"><span class="sel-km">0.6k</span><span class="sel-name">Congress
+                Well</span></button>
+            <button class="sel-btn" data-stop="2"><span class="sel-km">0.8k</span><span class="sel-name">Mil.
+                Mahadev</span></button>
+            <button class="sel-btn" data-stop="3"><span class="sel-km">3.0k</span><span class="sel-name">Postman
+                Cir.</span></button>
+            <button class="sel-btn" data-stop="4"><span class="sel-km">5.0k</span><span class="sel-name">Belagavi
+                Fort</span></button>
+            <button class="sel-btn" data-stop="5"><span class="sel-km">7.0k</span><span
+                class="sel-name">Chennamma</span></button>
+            <button class="sel-btn" data-stop="6"><span class="sel-km">8.0k</span><span
+                class="sel-name">Auditorium</span></button>
+          </div>
+        </div>
+
+        <!-- Live Dynamic Landmark Spotlight Card -->
+        <div class="spotlight-card" id="spotlightCard">
+          <div class="spotlight-media">
+            <img id="spotlightImg" src="assets/lele_ground.jpg" alt="Lele Ground Assembly Point">
+            <span class="spotlight-km-badge" id="spotlightKm">START &middot; 0.0 km</span>
+            <span class="spotlight-type-badge" id="spotlightType">Assembly Hub</span>
+          </div>
+
+          <div class="spotlight-body">
+            <div>
+              <p class="spotlight-via" id="spotlightVia">Subhash Chandra Ground &middot; Camp Area</p>
+              <h3 id="spotlightTitle">Lele Ground</h3>
+            </div>
+
+            <!-- Media switcher (Monuments vs Live Cultural Performance) -->
+            <div class="sub-pills" id="spotlightSubPills">
+              <button class="sub-pill active" id="btnViewLandmark">🏛️ Landmark View</button>
+              <button class="sub-pill" id="btnViewCulture">🎭 Cultural Performance</button>
+            </div>
+
+            <!-- Fort Sub-Gallery Switcher -->
+            <div class="sub-pills" id="fortSubPills" style="display:none;">
+              <button class="sub-pill active" data-img="assets/kamal_basti.jpg" data-name="Kamal Basti (1204 AD)">Kamal
+                Basti</button>
+              <button class="sub-pill" data-img="assets/chikka_basadi.jpg" data-name="Chikka Basadi">Chikka
+                Basadi</button>
+              <button class="sub-pill" data-img="assets/safa_masjid.jpg" data-name="Safa Masjid (1519 AD)">Safa
+                Masjid</button>
+            </div>
+
+            <p class="spotlight-history" id="spotlightHistory">
+              Historic public sports ground and major assembly venue in Belagavi. Serves as the central hub for 500
+              runners, mass warm-up, bib collection, and dignitary flag-off at 06:30 hrs.
+            </p>
+
+            <div class="spotlight-culture" id="spotlightCultureWrap">
+              <strong>Live Performance & Route Milestone</strong>
+              <span id="spotlightCulture">Zumba & Mass Folk Warm-up session for 500 runners and spectators before
+                flag-off.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SLIDE 4: CULTURAL CORRIDOR (WITH PHOTOS & ROUTE JUMP LINKS)
+     ========================================== -->
+  <section class="sec" id="slide-4">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Cultural Corridor &middot; Exact Route Positions</p>
+        <h2>Performance staged at the landmarks, not between them</h2>
+        <p>Rather than generic entertainment points, troupes are placed at the tourist sites the route crosses &mdash;
+          turning the run into a continuous corridor of Karnataka folk traditions.</p>
+      </div>
+
+      <div class="culture-grid">
+        <!-- Activity 1: Zumba at Lele Ground -->
+        <div class="c-card">
+          <div class="c-card-media">
+            <img src="assets/zumba_warmup.jpg" alt="Mass Zumba and folk warm up at Lele Ground">
+            <span class="c-card-km">km 0.0 &middot; Start</span>
+          </div>
+          <div class="c-card-body">
+            <span class="c-card-loc">Lele Ground Assembly Hub</span>
+            <h3>Zumba &amp; Folk Warm-Up</h3>
+            <p>Mass energetic warm-up for all 500 runners and spectators led from the stage, transitioning directly into
+              the 06:30 dignitary flag-off.</p>
+            <button class="btn-jump-route" data-target-stop="0">📍 View Position on Route &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Activity 2: Karadi Majalu at Postman Statue -->
+        <div class="c-card">
+          <div class="c-card-media">
+            <img src="assets/karadi_majalu.jpg"
+              alt="Karadi Majalu folk percussion troupe performing at Postman Statue Circle">
+            <span class="c-card-km">km 3.0</span>
+          </div>
+          <div class="c-card-body">
+            <span class="c-card-loc">World's First Postman Circle</span>
+            <h3>Karadi Majalu Troupe</h3>
+            <p>Traditional North Karnataka folk percussion ensemble with bronze cymbals lifting runner pace as the pack
+              crosses the 3 km mark.</p>
+            <button class="btn-jump-route" data-target-stop="3">📍 View Position on Route &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Activity 3: Yakshagana & Dollu Kunitha at Fort -->
+        <div class="c-card">
+          <div class="c-card-media">
+            <img src="assets/yakshagana_fort.jpg"
+              alt="Yakshagana artist and Dollu Kunitha drummers at Belagavi Fort ramparts">
+            <span class="c-card-km">km 5.0</span>
+          </div>
+          <div class="c-card-body">
+            <span class="c-card-loc">Belagavi Fort Ramparts</span>
+            <h3>Yakshagana / Dollu Kunitha</h3>
+            <p>Signature cultural highlight staged against the 13th-century ramparts &mdash; the highest photo, media,
+              and spectator cheering spot.</p>
+            <button class="btn-jump-route" data-target-stop="4">📍 View Position on Route &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Activity 4: Dhol-Tasha at Finish -->
+        <div class="c-card">
+          <div class="c-card-media">
+            <img src="assets/dhol_tasha.jpg" alt="Dhol Tasha troupe at Kumar Gandharv Auditorium finish arch">
+            <span class="c-card-km">km 8.0 &middot; Finish</span>
+          </div>
+          <div class="c-card-body">
+            <span class="c-card-loc">Kumar Gandharv Auditorium</span>
+            <h3>Dhol-Tasha Welcome</h3>
+            <p>High-energy finish arch reception with grand drums welcoming every finisher directly into the auditorium
+              for refreshments and function.</p>
+            <button class="btn-jump-route" data-target-stop="6">📍 View Position on Route &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SLIDE 5: EVENT DAY TIMELINE
+     ========================================== -->
+  <section class="sec sec-alt" id="slide-5">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Race Morning Schedule</p>
+        <h2>Sunday, 27 September 2026</h2>
+        <p>Morning timeline from assembly through race finish, refreshments, and transition to the formal auditorium
+          function.</p>
+      </div>
+
+      <div class="tl">
+        <div class="tl-row">
+          <time>05:30</time>
+          <div class="what">
+            <b>Assembly &amp; Bib Collection Opens</b>
+            <span>Lele Ground &mdash; registration desks, baggage counter, medical desk and warm-up zone open.</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <time>06:15</time>
+          <div class="what">
+            <b>Bib Counters Close &middot; Mass Warm-Up</b>
+            <span>Field marshals assemble runners at start pens; 15-minute energetic folk & zumba warm-up.</span>
+          </div>
+        </div>
+        <div class="tl-row key">
+          <time>06:30</time>
+          <div class="what">
+            <b>Flag-Off &mdash; Belagavi Marathon 2026</b>
+            <span>Flag-off by Hon'ble Deputy Commissioner and invited dignitaries at Lele Ground.</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <time>07:00</time>
+          <div class="what">
+            <b>Leading Runners Reach Belagavi Fort (km 5.0)</b>
+            <span>Peak cultural performance and photography window at the fort gates and basadi precinct.</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <time>07:20</time>
+          <div class="what">
+            <b>First Finishers Cross Arch &middot; Kumar Gandharv Auditorium</b>
+            <span>Dhol-tasha welcome, official medals of recognition, and fresh banana & juice refreshments.</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <time>09:30</time>
+          <div class="what">
+            <b>Course Closes &middot; Road Reopening</b>
+            <span>Traffic police reopen the route; runners, guests, and families transition into auditorium
+              foyer.</span>
+          </div>
+        </div>
+        <div class="tl-row key">
+          <time>11:00</time>
+          <div class="what">
+            <b>Formal Function &amp; AI Tourism Website Inauguration</b>
+            <span>Official protocol, awards ceremony, Tourist Mitra honours, and cultural programme.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SLIDE 6: AUDITORIUM PROCEEDINGS (BIG UNIFIED SESSION)
+     ========================================== -->
+  <section class="sec" id="slide-6">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Auditorium Proceedings &middot; Complete Order</p>
+        <h2>Order of proceedings at Kumar Gandharv Auditorium</h2>
+        <p>A unified grand session combining state protocol, the AI website inauguration, cultural performances by hotel
+          management students, awards, and felicitation.</p>
+      </div>
+
+      <div class="prog-unified">
+        <div class="prog-unified-head">
+          <h3>Grand Function &middot; Formal Protocol, Cultural Showcase &amp; Awards</h3>
+          <span class="prog-time-badge">11:00 hrs Onward &middot; Main Stage</span>
+        </div>
+
+        <ol class="ord-grid">
+          <li class="ord-item">
+            <div>
+              <b>Drum Dance &amp; Folk Reception</b>
+              <em>Welcoming invited dignitaries, guests, and runners at the entrance foyer</em>
+            </div>
+          </li>
+          <li class="ord-item">
+            <div>
+              <b>National Anthem &amp; State Anthem</b>
+              <em>Formal protocol &mdash; Naada Geethe (Jaya Bharata Jananiya Tanujate)</em>
+            </div>
+          </li>
+          <li class="ord-item">
+            <div>
+              <b>Welcome Address by JD Tourism</b>
+              <em>Joint Director, Dept. of Tourism Belagavi &mdash; bouquets, books, and welcome speech</em>
+            </div>
+          </li>
+          <li class="ord-item">
+            <div>
+              <b>Lighting of the Ceremonial Lamp</b>
+              <em>Deepa Prajwalana by Hon'ble DC, Ministers, and distinguished guests</em>
+            </div>
+          </li>
+          <li class="ord-item hi">
+            <div>
+              <b>Cultural Performance &amp; Hotel Management Showcase</b>
+              <em>4 to 6 curated song and dance items including special performances by Hotel Management students</em>
+            </div>
+          </li>
+          <li class="ord-item hi">
+            <div>
+              <b>Inauguration of Rebuilt AI Tourism Website &amp; Mobile Canteen</b>
+              <em>Official digital portal launch on stage by Hon'ble Deputy Commissioner &amp; dignitaries</em>
+            </div>
+          </li>
+          <li class="ord-item">
+            <div>
+              <b>Speech &mdash; Hon'ble Deputy Commissioner, Belagavi</b>
+              <em>Address on World Tourism Day, AI digital vision, and district heritage promotion</em>
+            </div>
+          </li>
+          <li class="ord-item">
+            <div>
+              <b>Addresses by Guest Dignitaries</b>
+              <em>Remarks by district administration and tourism officials</em>
+            </div>
+          </li>
+          <li class="ord-item">
+            <div>
+              <b>Keynote Speech &mdash; District In-Charge Minister / MLA</b>
+              <em>Government vision for tourism development and community sports</em>
+            </div>
+          </li>
+          <li class="ord-item hi">
+            <div>
+              <b>Grand Prize Distribution Ceremony</b>
+              <em>Awards for 8 km Marathon, District Photography, Essay, and Drawing competitions</em>
+            </div>
+          </li>
+          <li class="ord-item hi">
+            <div>
+              <b>Felicitation of Tourist Mitras</b>
+              <em>Honouring frontline tourism guides, guardians, and cultural contributors</em>
+            </div>
+          </li>
+          <li class="ord-item">
+            <div>
+              <b>Vote of Thanks</b>
+              <em>Formal acknowledgement of all departments, run clubs, volunteers, and police</em>
+            </div>
+          </li>
+          <li class="ord-item hi">
+            <div>
+              <b>High Tea &amp; Hospitality for Dignitaries &amp; Guests</b>
+              <em>Special tea service, networking, and conclusion in the auditorium lounge</em>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SLIDE 7: DIGITAL AI REVAMP
+     ========================================== -->
+  <section class="sec digital" id="slide-7">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Answering the Global Theme</p>
+        <h2>Digital enhancement &amp; artificial intelligence in tourism</h2>
+        <p>The World Tourism Day theme is not just decoration. Belagavi's entire district tourism website is being
+          completely rebuilt and enhanced with AI capabilities, inaugurated on event day.</p>
+      </div>
+
+      <div class="dgrid">
+        <div class="dcell">
+          <h3>01 &middot; AI Smart Itinerary Engine</h3>
+          <p>Interactive planning tool that customises Belagavi heritage trails based on visitor duration, interest
+            (history, waterfalls, spiritual, cuisine), and real-time travel logistics.</p>
+        </div>
+        <div class="dcell">
+          <h3>02 &middot; Digital Tourist Mitra (AI Assistant)</h3>
+          <p>A multi-lingual conversational AI guide in Kannada, Marathi, and English providing instant historical
+            context, audio commentary, and navigational guidance at every monument.</p>
+        </div>
+        <div class="dcell">
+          <h3>03 &middot; Interactive Heritage Geotagging</h3>
+          <p>High-resolution drone mapping, 3D monument walkthroughs of Belagavi Fort, Kamal Basti, and surrounding
+            district treasures preserving Belagavi’s legacy online.</p>
+        </div>
+      </div>
+
+      <div class="dbanner">
+        <div class="db-k">Inauguration Moment</div>
+        <div class="db-v">The rebuilt AI Tourism Website will be formally unveiled on stage during Session 1 at Kumar
+          Gandharv Auditorium.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SLIDE 8: COMPETITIONS
+     ========================================== -->
+  <section class="sec" id="slide-8">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">District Competitions</p>
+        <h2>Four contests feeding one grand prize distribution</h2>
+        <p>Engaging youth and artists across Belagavi district before the event, with awards presented live on stage at
+          the main function.</p>
+      </div>
+
+      <div class="comps">
+        <div class="comp">
+          <h3>Photography Contest</h3>
+          <p>Theme: "Belagavi Unseen Heritage". High-resolution entries judged across student and open categories.</p>
+          <p class="st act">Closes 22 Sep &middot; Pre-judged</p>
+        </div>
+        <div class="comp">
+          <h3>District Essay Contest</h3>
+          <p>Theme: "Digital Innovation in Karnataka Tourism" in Kannada, English, and Marathi.</p>
+          <p class="st act">Closes 22 Sep &middot; Pre-judged</p>
+        </div>
+        <div class="comp">
+          <h3>Drawing &amp; Art Contest</h3>
+          <p>School and college students depicting Rani Chennamma, Belagavi Fort, and cultural icons.</p>
+          <p class="st act">Closes 22 Sep &middot; Pre-judged</p>
+        </div>
+        <div class="comp">
+          <h3>8 km Heritage Marathon</h3>
+          <p>Men, Women, and Veteran podium finishers, plus recognition medals for all 500 finishers.</p>
+          <p class="st live">Event Day &middot; 27 Sep</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SLIDE 9: MOBILIZATION STRATEGY (EXPANDED PER USER INSTRUCTION)
+     ========================================== -->
+  <section class="sec sec-alt" id="slide-9">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Mobilization Strategy</p>
+        <h2>How we reach 500+ runners in 17 days</h2>
+        <p>A multi-channel institutional, school, and digital sprint to pack the start line and maximize community
+          participation.</p>
+      </div>
+
+      <div class="mob-grid">
+        <!-- Card 1: School & Assembly Visits -->
+        <div class="mob-card">
+          <div class="mob-card-head">
+            <span class="mob-sub">Channel 01 &middot; School Visits</span>
+            <span class="mob-badge">Direct Engagement</span>
+          </div>
+          <h3>School Assembly Talks &amp; Pamphlet Distribution</h3>
+          <ul>
+            <li><strong>Direct School Visits:</strong> Organizing on-ground visits to schools and colleges across
+              Belagavi and surrounding talukas.</li>
+            <li><strong>Assembly Presentations:</strong> Briefing students and faculty during morning school assemblies
+              to encourage mass participation in the 8 km run.</li>
+            <li><strong>Pamphlet Drive:</strong> Handing out registration flyers, parent consent forms, and competition
+              details directly to youth.</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Government Official Circulars -->
+        <div class="mob-card">
+          <div class="mob-card-head">
+            <span class="mob-sub">Channel 02 &middot; DC Directives</span>
+            <span class="mob-badge">Government Push</span>
+          </div>
+          <h3>Letters to Officials &amp; Government Schools</h3>
+          <ul>
+            <li><strong>Official DC Circulars:</strong> Formal letters dispatched to all government schools, PU
+              colleges, and ITIs to send student runners.</li>
+            <li><strong>Departmental Mobilization:</strong> Directives to District Police, Sports Authority, NCC, NSS,
+              and Scouts &amp; Guides battalions.</li>
+            <li><strong>Institutional Nominations:</strong> Designated teacher coordinators at each school managing
+              student batches.</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Organized Run Clubs -->
+        <div class="mob-card">
+          <div class="mob-card-head">
+            <span class="mob-sub">Channel 03 &middot; Athlete Network</span>
+            <span class="mob-badge">Committed Runners</span>
+          </div>
+          <h3>Run Clubs &amp; Regional Sports Groups</h3>
+          <ul>
+            <li><strong>City &amp; Regional Run Clubs:</strong> Dedicated coordination with runner groups in Belagavi,
+              Hubballi, Dharwad, Kolhapur &amp; Bengaluru.</li>
+            <li><strong>Athletic Associations:</strong> Engaging district track &amp; field clubs for competitive
+              category participation.</li>
+            <li><strong>Bulk Club Registration:</strong> Priority registration batches and group bib allocations for
+              running groups.</li>
+          </ul>
+        </div>
+
+        <!-- Card 4: Digital Creators & Media -->
+        <div class="mob-card">
+          <div class="mob-card-head">
+            <span class="mob-sub">Channel 04 &middot; Media Engine</span>
+            <span class="mob-badge">City-Wide Reach</span>
+          </div>
+          <h3>Influencer Reels, Hoardings &amp; Press</h3>
+          <ul>
+            <li><strong>Regional Creators:</strong> Kannada and Marathi travel/fitness influencers producing
+              route-reveal reels shot at Belagavi Fort.</li>
+            <li><strong>Prime Outdoor Hoardings:</strong> High-visibility flex banners at Chennamma Circle, Fort,
+              Central Bus Stand, and Lele Ground.</li>
+            <li><strong>Print &amp; Radio Press Note:</strong> Official DC press release issued to leading Kannada and
+              Marathi daily newspapers.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SLIDE 10: 17-DAY COUNTDOWN
+     ========================================== -->
+  <section class="sec" id="slide-10">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Execution Timeline</p>
+        <h2>The 17-day critical countdown</h2>
+      </div>
+
+      <div class="cdhead">
+        <div class="cdnum">17</div>
+        <p class="cdnote">Days between today's presentation and race morning. Every milestone is tightly sequenced to
+          guarantee seamless execution.</p>
+      </div>
+
+      <div class="cd">
+        <div class="cdc">
+          <span class="d">10&ndash;12 Sep</span>
+          <span class="m">DC approval; traffic police route recce; school circulars issued.</span>
+        </div>
+        <div class="cdc">
+          <span class="d">12&ndash;14 Sep</span>
+          <span class="m">Registration portal live; school assembly visits start; pamphlet drive.</span>
+        </div>
+        <div class="cdc">
+          <span class="d">15&ndash;20 Sep</span>
+          <span class="m">Influencer reels live; run club mobilization; hoardings deployed.</span>
+        </div>
+        <div class="cdc">
+          <span class="d">22 Sep</span>
+          <span class="m">Photography, essay &amp; drawing contest submissions close.</span>
+        </div>
+        <div class="cdc">
+          <span class="d">23&ndash;25 Sep</span>
+          <span class="m">Registrations close; T-shirt, cap, bib, and medal production complete.</span>
+        </div>
+        <div class="cdc">
+          <span class="d">26 Sep</span>
+          <span class="m">Advance bib collection; route marking, barricading &amp; stage setup.</span>
+        </div>
+        <div class="cdc evt">
+          <span class="d">27 Sep</span>
+          <span class="m">EVENT DAY: 8 km Heritage Marathon &amp; Website Inauguration.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SLIDE 11: OPERATIONS & SAFETY & REFRESHMENTS
+     ========================================== -->
+  <section class="sec sec-alt" id="slide-11">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Operations &middot; Safety &middot; Athlete Experience</p>
+        <h2>Participant logistics, medals &amp; safety plan</h2>
+        <p>Professional race management ensuring safety, hydration, medical support, medals of recognition, and fresh
+          refreshments.</p>
+      </div>
+
+      <div class="ops-grid">
+        <div class="ops-card">
+          <p class="ops-sub">Participant Logistics &amp; Hospitality</p>
+          <h3>Registration, Medals &amp; Refreshments</h3>
+          <ul>
+            <li><strong>Online &amp; Walk-In Registrations:</strong> Seamless digital portal + school coordinator
+              offline desk support.</li>
+            <li><strong>Advance Bib Collection:</strong> Open on 26 Sep at Lele Ground + race morning desk
+              (05:30&ndash;06:15) to prevent start delays.</li>
+            <li><strong>Finisher Recognition Medals:</strong> High-quality engraved metal medals awarded to all 500
+              participants upon finishing.</li>
+            <li><strong>Post-Run Refreshments:</strong> Nutritious fresh bananas and chilled energy juice served
+              immediately at the finish arch.</li>
+          </ul>
+        </div>
+
+        <div class="ops-card">
+          <p class="ops-sub">Safety, Medical &amp; Traffic</p>
+          <h3>Hydration, First Aid &amp; Route Marshals</h3>
+          <ul>
+            <li><strong>Hydration Corridors:</strong> Water and electrolyte stations placed every 2 km along the course.
+            </li>
+            <li><strong>Advanced Medical Coverage:</strong> Advanced Cardiac Life Support (ALS) ambulances trailing the
+              pack and stationed at Fort.</li>
+            <li><strong>Volunteer Route Marshals:</strong> Trained volunteer marshals at every turn and major
+              intersection.</li>
+            <li><strong>Rolling Traffic Barricading:</strong> Rolling road closures coordinated seamlessly with Belagavi
+              Traffic Police.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTERACTIVE SCRIPT ===== -->
+  <script>
+    // Landmark & Culture Data (Linked strictly with route coordinates)
+    var landmarks = [
+      {
+        id: 'lele-ground',
+        name: 'Lele Ground (Subhash Chandra Ground)',
+        km: 'START · 0.0 km',
+        type: 'Start & Assembly Hub',
+        via: 'Subhash Chandra Ground · Camp Area',
+        image: 'assets/lele_ground.jpg',
+        cultureImg: 'assets/zumba_warmup.jpg',
+        history: 'Historic public sports ground and major civic gathering space in Belagavi. Serves as the central staging ground for 500 runners, mass warm-up, bib distribution, and the dignitary flag-off at 06:30 hrs.',
+        culture: 'Zumba & Mass Folk Warm-up session for 500 runners and spectators before flag-off.',
+        hasSubGallery: false
+      },
+      {
+        id: 'congress-well',
+        name: 'Congress Well Memorial Park',
+        km: '0.6 km',
+        type: 'National Freedom Heritage',
+        via: 'Congress Road Corridor',
+        image: 'assets/congress_well_park.jpg',
+        cultureImg: 'assets/congress_well_park.jpg',
+        history: 'Sacred historical landmark commemorating the 39th Session of the Indian National Congress in 1924 — the historic only session ever presided over by Mahatma Gandhi. Features the stone memorial well and pavilion.',
+        culture: 'Patriotic brass band and historic commentary point marking Gandhi\'s legacy.',
+        hasSubGallery: false
+      },
+      {
+        id: 'military-mahadev',
+        name: 'Military Mahadev Temple',
+        km: '0.8 km',
+        type: 'Cantonment Sacred Heritage',
+        via: 'Camp Cantonment Road',
+        image: 'assets/military_mahadev.jpg',
+        cultureImg: 'assets/military_mahadev.jpg',
+        history: 'A revered 19th-century temple complex within the lush green military cantonment, renowned for its ancient banyan tree canopy and serene stone architecture.',
+        culture: 'Traditional Nadaswaram & Mangala Vadya troupe welcoming the runner pack into the Camp.',
+        hasSubGallery: false
+      },
+      {
+        id: 'postman-statue',
+        name: "World's First Postman Statue Circle",
+        km: '3.0 km',
+        type: 'Singular Belagavi Civic Icon',
+        via: 'Ambedkar Circle / Head Post Office',
+        image: 'assets/postman_statue.jpg',
+        cultureImg: 'assets/karadi_majalu.jpg',
+        history: 'Belagavi’s unique global claim — believed to be the world’s first public monument raised in honour of the selfless service of postal delivery workers, standing at the city’s major junction.',
+        culture: 'Karadi Majalu folk percussion troupe and community cheer station lifting runner pace.',
+        hasSubGallery: false
+      },
+      {
+        id: 'belagavi-fort',
+        name: 'Belagavi Fort Complex',
+        km: '5.0 km',
+        type: '13th-Century Fortress Cluster',
+        via: 'Patil Galli Entrance',
+        image: 'assets/kamal_basti.jpg',
+        cultureImg: 'assets/yakshagana_fort.jpg',
+        history: 'Built in 1204 AD by the Ratta dynasty, this massive fortress encloses a shared heritage cluster: the 72-petal lotus ceiling of Kamal Basti, the carved Chikka Basadi, and the 16th-century Safa Masjid.',
+        culture: 'Signature Performance Point — Yakshagana & Dollu Kunitha with ancient ramparts as backdrop (Highest photo & media value).',
+        hasSubGallery: true
+      },
+      {
+        id: 'chennamma-circle',
+        name: 'Kittur Rani Chennamma Circle',
+        km: '7.0 km',
+        type: 'Anti-Colonial Freedom Icon',
+        via: 'Khanapur Road Hub',
+        image: 'assets/chennamma_circle.jpg',
+        cultureImg: 'assets/chennamma_circle.jpg',
+        history: 'The bustling civic heart of Belagavi, centered on the grand equestrian bronze monument of Kittur Rani Chennamma, who led an armed revolt against the British East India Company in 1824.',
+        culture: 'Veeragase & Dhol-Tasha folk warriors performing at the queen’s memorial.',
+        hasSubGallery: false
+      },
+      {
+        id: 'gandharv-auditorium',
+        name: 'Kumar Gandharv Auditorium',
+        km: 'FINISH · 8.0 km',
+        type: 'Finish Arch & Digital Portal Launch',
+        via: 'Jijamata Road',
+        image: 'assets/gandharv_auditorium.jpg',
+        cultureImg: 'assets/dhol_tasha.jpg',
+        history: 'Civic cultural auditorium named after maestro Kumar Gandharva. Hosts the finish arch, participant refreshments (banana & juice), formal protocol, awards, and the official launch of the AI Tourism Website.',
+        culture: 'Grand Dhol-Tasha finish reception, award felicitations, and stage cultural items.',
+        hasSubGallery: false
+      }
+    ];
+
+    // Interactive Map & Spotlight Controller
+    var currentStop = 0;
+    var tourInterval = null;
+    var activeViewMode = 'landmark'; // 'landmark' or 'culture'
+
+    var spotlightImg = document.getElementById('spotlightImg');
+    var spotlightKm = document.getElementById('spotlightKm');
+    var spotlightType = document.getElementById('spotlightType');
+    var spotlightVia = document.getElementById('spotlightVia');
+    var spotlightTitle = document.getElementById('spotlightTitle');
+    var spotlightHistory = document.getElementById('spotlightHistory');
+    var spotlightCulture = document.getElementById('spotlightCulture');
+    var fortSubPills = document.getElementById('fortSubPills');
+    var btnViewLandmark = document.getElementById('btnViewLandmark');
+    var btnViewCulture = document.getElementById('btnViewCulture');
+    var btnPlayTour = document.getElementById('btnPlayTour');
+    var mapNodes = document.querySelectorAll('.map-node');
+    var selButtons = document.querySelectorAll('.sel-btn');
+
+    var tabVector = document.getElementById('tabVector');
+    var tabGoogle = document.getElementById('tabGoogle');
+    var svgMapView = document.getElementById('svgMapView');
+    var gmapImgView = document.getElementById('gmapImgView');
+
+    // Map Tab Switcher (Vector SVG vs Google Map)
+    if (tabVector && tabGoogle) {
+      tabVector.addEventListener('click', function () {
+        tabVector.classList.add('active');
+        tabGoogle.classList.remove('active');
+        svgMapView.style.display = 'block';
+        gmapImgView.style.display = 'none';
+      });
+
+      tabGoogle.addEventListener('click', function () {
+        tabGoogle.classList.add('active');
+        tabVector.classList.remove('active');
+        svgMapView.style.display = 'none';
+        gmapImgView.style.display = 'block';
+        stopTour();
+      });
+    }
+
+    function updateSpotlight(index, customImg) {
+      if (index < 0 || index >= landmarks.length) return;
+      currentStop = index;
+      var data = landmarks[index];
+
+      mapNodes.forEach(function (n) {
+        var stopVal = parseInt(n.getAttribute('data-stop'), 10);
+        if (stopVal === index) {
+          n.classList.add('active');
+        } else {
+          n.classList.remove('active');
+        }
+      });
+
+      selButtons.forEach(function (b) {
+        var stopVal = parseInt(b.getAttribute('data-stop'), 10);
+        if (stopVal === index) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+
+      if (customImg) {
+        spotlightImg.src = customImg;
+      } else if (activeViewMode === 'culture') {
+        spotlightImg.src = data.cultureImg;
+      } else {
+        spotlightImg.src = data.image;
+      }
+      spotlightImg.alt = data.name;
+
+      spotlightKm.textContent = data.km;
+      spotlightType.textContent = (activeViewMode === 'culture') ? 'Live Cultural Performance' : data.type;
+      spotlightVia.textContent = data.via;
+      spotlightTitle.textContent = data.name;
+      spotlightHistory.textContent = data.history;
+      spotlightCulture.textContent = data.culture;
+
+      if (data.hasSubGallery && activeViewMode === 'landmark') {
+        fortSubPills.style.display = 'flex';
+      } else {
+        fortSubPills.style.display = 'none';
+      }
+    }
+
+    // Media Switcher inside Spotlight (Landmark View vs Culture View)
+    if (btnViewLandmark && btnViewCulture) {
+      btnViewLandmark.addEventListener('click', function () {
+        activeViewMode = 'landmark';
+        btnViewLandmark.classList.add('active');
+        btnViewCulture.classList.remove('active');
+        updateSpotlight(currentStop);
+      });
+
+      btnViewCulture.addEventListener('click', function () {
+        activeViewMode = 'culture';
+        btnViewCulture.classList.add('active');
+        btnViewLandmark.classList.remove('active');
+        updateSpotlight(currentStop);
+      });
+    }
+
+    // Map Node Hover / Click Listeners
+    mapNodes.forEach(function (node) {
+      var stopIndex = parseInt(node.getAttribute('data-stop'), 10);
+      node.addEventListener('mouseenter', function () {
+        updateSpotlight(stopIndex);
+      });
+      node.addEventListener('click', function () {
+        stopTour();
+        updateSpotlight(stopIndex);
+      });
+    });
+
+    // Selector Button Listeners
+    selButtons.forEach(function (btn) {
+      var stopIndex = parseInt(btn.getAttribute('data-stop'), 10);
+      btn.addEventListener('click', function () {
+        stopTour();
+        updateSpotlight(stopIndex);
+      });
+      btn.addEventListener('mouseenter', function () {
+        updateSpotlight(stopIndex);
+      });
+    });
+
+    // Jump from Cultural Corridor Cards directly to Route Position
+    document.querySelectorAll('.btn-jump-route').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var targetStop = parseInt(btn.getAttribute('data-target-stop'), 10);
+        activeViewMode = 'culture';
+        if (btnViewCulture) {
+          btnViewCulture.classList.add('active');
+          btnViewLandmark.classList.remove('active');
+        }
+        goToSlide(2); // Jump to Slide 3 (0-indexed: 2)
+        updateSpotlight(targetStop);
+      });
+    });
+
+    // Fort Sub-pills click
+    document.querySelectorAll('.sub-pill[data-img]').forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        document.querySelectorAll('.sub-pill[data-img]').forEach(function (p) { p.classList.remove('active'); });
+        pill.classList.add('active');
+        var imgUrl = pill.getAttribute('data-img');
+        updateSpotlight(4, imgUrl);
+      });
+    });
+
+    // Auto Tour Mode
+    function startTour() {
+      if (tabVector && !tabVector.classList.contains('active')) {
+        tabVector.click();
+      }
+      btnPlayTour.textContent = '⏸ Pause Tour';
+      btnPlayTour.classList.add('playing');
+      tourInterval = setInterval(function () {
+        currentStop = (currentStop + 1) % landmarks.length;
+        updateSpotlight(currentStop);
+      }, 2800);
+    }
+
+    function stopTour() {
+      if (tourInterval) {
+        clearInterval(tourInterval);
+        tourInterval = null;
+        btnPlayTour.textContent = '▶ Play Route Tour';
+        btnPlayTour.classList.remove('playing');
+      }
+    }
+
+    btnPlayTour.addEventListener('click', function () {
+      if (tourInterval) {
+        stopTour();
+      } else {
+        startTour();
+      }
+    });
+
+    // Slide Deck Navigation Controls (11 SLIDES TOTAL)
+    var slides = ['slide-1', 'slide-2', 'slide-3', 'slide-4', 'slide-5', 'slide-6', 'slide-7', 'slide-8', 'slide-9', 'slide-10', 'slide-11'];
+    var slideTitles = [
+      'Belagavi Marathon 2026',
+      'The Proposition · 4 Cards',
+      'Interactive Route Map · 8 km',
+      'Cultural Corridor',
+      'Event Day Schedule',
+      'Programme Day Proceedings',
+      'AI Tourism Website Revamp',
+      'Competitions',
+      'Mobilization in 17 Days',
+      '17-Day Critical Countdown',
+      'Operations & Logistics'
+    ];
+
+    var currentSlideIdx = 0;
+    var deckCounter = document.getElementById('deckCounter');
+    var deckTitle = document.getElementById('deckTitle');
+    var btnPrev = document.getElementById('btnPrev');
+    var btnNext = document.getElementById('btnNext');
+
+    function goToSlide(idx) {
+      if (idx < 0) idx = 0;
+      if (idx >= slides.length) idx = slides.length - 1;
+      currentSlideIdx = idx;
+      var targetId = slides[idx];
+      var el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      deckCounter.textContent = 'SLIDE ' + (idx + 1) + ' / ' + slides.length;
+      deckTitle.textContent = slideTitles[idx];
+    }
+
+    btnPrev.addEventListener('click', function () { goToSlide(currentSlideIdx - 1); });
+    btnNext.addEventListener('click', function () { goToSlide(currentSlideIdx + 1); });
+
+    // Keyboard Listeners for Presentation
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+          e.preventDefault();
+          goToSlide(currentSlideIdx + 1);
+        }
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        e.preventDefault();
+        goToSlide(currentSlideIdx - 1);
+      }
+    });
+
+    // Update slide indicator on scroll
+    window.addEventListener('scroll', function () {
+      var scrollPos = window.scrollY + window.innerHeight * 0.35;
+      for (var i = slides.length - 1; i >= 0; i--) {
+        var el = document.getElementById(slides[i]);
+        if (el && el.offsetTop <= scrollPos) {
+          if (currentSlideIdx !== i) {
+            currentSlideIdx = i;
+            deckCounter.textContent = 'SLIDE ' + (i + 1) + ' / ' + slides.length;
+            deckTitle.textContent = slideTitles[i];
+          }
+          break;
+        }
+      }
+    });
+
+    // Theme Toggle
+    var themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', function () {
+      var currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+    });
+  </script>
+
+</body>
+
+</html>
