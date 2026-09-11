@@ -16,8 +16,8 @@ Budget shows cost heads with indicative estimates (flagged as assumptions to ver
 Presentation will be an HTML artifact deck, built after event.md is approved
 Source inputs (read, transcribed)
 File	Content
-WhatsApp Image ... 13.34.38.jpeg	Handwritten page 1 — marathon timing, route options, requirements, programme day running order
-WhatsApp Image ... 13.34.38 (1).jpeg	Handwritten page 2 — session 2 (tiffin, hotel-management cultural items, lunch) + 6 budget heads
+| `notes/handwritten_notes_p1.jpeg` | Handwritten page 1 — marathon timing, route options, requirements, programme day running order |
+| `notes/handwritten_notes_p2.jpeg` | Handwritten page 2 — session 2 (tiffin, hotel-management cultural items, high tea) + 6 budget heads |
 map.png	Google Maps route, 8.8 km, Lele Ground → Congress Well Park → Postman Statue Circle → Belagavi Fort → Chennamma Circle → finish pin near Jijamata Rd
 Step 1 — Create event.md
 Write to /Users/parashramgore/Desktop/Dharma/Clients/belgaum DC/event.md with the content below.

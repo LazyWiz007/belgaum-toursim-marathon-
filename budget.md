@@ -11,16 +11,16 @@
 | 4 | Bibs & registration | Bibs, timing support, registration desk | 40,000 |
 | 5 | Medals | 500 finisher medals @ ~₹90 | 45,000 |
 | 6 | Banners & invitations | Hoardings, flex, route signage, invitation cards, publicity | 1,25,000 |
-| 7 | Tiffin & others | Breakfast 550 @ ₹60 + lunch 600 @ ₹150 | 1,50,000 |
+| 7 | Tiffin & refreshments | Breakfast 550 @ ₹60 + high tea 600 @ ₹60 | 69,000 |
 | 8 | Drinking water | Hydration stations along the route + venue | 35,000 |
 | 9 | Bouquets, garlands, shawls, books | Guest felicitation and Tourist Mitra honours | 40,000 |
 | 10 | Cash prizes | Marathon + photography + essay + drawing | 1,50,000 |
 | 11 | Honorarium | Folk troupes, artists, anchors, volunteers | 1,75,000 |
 | 12 | Medical | Ambulance, first aid, paramedics | 40,000 |
 | 13 | Digital promotion | Influencer collaborations, run club outreach, paid digital | 1,00,000 |
-| | **Sub-total** | | **13,20,500** |
-| | Contingency (~7%) | | 92,000 |
-| | **Total** | | **~₹14,12,500** |
+| | **Sub-total** | | **12,39,500** |
+| | Contingency (~7%) | | 86,765 |
+| | **Total** | | **~₹13,26,265** |
 
 Heads 1, 6, 7, 9, 10 and 11 correspond exactly to the six heads in the DC office note. Heads 2, 3, 4, 5, 8, 12 and 13 are additions required to actually deliver a 500-participant run.
 
@@ -53,9 +53,9 @@ Event at a glance — the summary table
 The 8 km route — visual route diagram, the deck's centrepiece
 The five landmarks — what each one means to Belagavi's tourism story
 Cultural corridor — activity points along the route
-Event-day timeline — 05:30 to lunch
+Event-day timeline — 05:30 to 13:00 hrs
 Programme Day Session 1 — formal function running order
-Programme Day Session 2 — cultural programme and lunch
+Programme Day Session 2 — cultural programme, awards and concluding tea
 Competitions and prizes
 Promotion strategy — run clubs, influencers, institutions, media
 17-day countdown
@@ -77,7 +77,7 @@ After the deck is published, open the artifact link and check the route slide re
 Banners · hoardings `[⚠️ note read as "hoardings"]` · caps · T-shirts · tiffin · drinking water · bibs · medals · route signage & km markers · barricades · PA system at start and finish · timing support · first aid & ambulance · marshals and volunteers
 
 ### For the function
-Stage, backdrop and décor · sound and lighting · seating · dais and protocol arrangements · bouquets, garlands, shawls, books, mementos · invitation cards · lamp for inauguration · photography and videography · tiffin and lunch service
+Stage, backdrop and décor · sound and lighting · seating · dais and protocol arrangements · bouquets, garlands, shawls, books, mementos · invitation cards · lamp for inauguration · photography and videography · tiffin and high tea service
 
 ### Approvals & clearances required
 - Traffic police NOC and road closure permission for the route
